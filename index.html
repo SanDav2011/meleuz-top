@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meleuz Top — обмен криптовалюты</title>
+<meta name="description" content="Оригинальный шаблон лендинга для сервиса обмена криптовалюты. Замените тексты, контакты и курсы на свои.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#">MELEUZ<span>TOP</span></a>
+    <nav class="nav" id="nav">
+      <a href="#features">Преимущества</a>
+      <a href="#audience">Кому подходит</a>
+      <a href="#steps">Как это работает</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts" class="btn btn-small">Связаться</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Обмен криптовалюты</p>
+        <h1>Покупайте и продавайте цифровую валюту удобно и прозрачно</h1>
+        <p class="lead">Сервис-заглушка для обмена USDT, USDC и BTC. Здесь можно разместить ваши условия, способы оплаты, лимиты и контакты поддержки.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#calculator">Начать обмен</a>
+          <a class="btn ghost" href="#contacts">Задать вопрос</a>
+        </div>
+        <ul class="hero-points">
+          <li>Онлайн-заявка</li>
+          <li>Прозрачные условия</li>
+          <li>Поддержка клиентов</li>
+        </ul>
+      </div>
+
+      <div class="calculator card" id="calculator">
+        <div class="tabs">
+          <button class="tab active" data-mode="sell">Продать</button>
+          <button class="tab" data-mode="buy">Купить</button>
+        </div>
+
+        <label class="field">
+          <span>Криптовалюта</span>
+          <select id="asset">
+            <option value="usdt">USDT</option>
+            <option value="usdc">USDC</option>
+            <option value="btc">BTC</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Сумма операции</span>
+          <input id="amount" type="number" min="0" step="0.01" placeholder="0">
+        </label>
+
+        <div class="rate-row">
+          <span>Ориентировочный курс</span>
+          <strong id="rate">—</strong>
+        </div>
+        <div class="rate-row result">
+          <span>Расчётная сумма</span>
+          <strong id="result">0 ₽</strong>
+        </div>
+
+        <p class="note">Демонстрационные курсы. Замените значения и логику расчёта на актуальные данные вашего сервиса.</p>
+        <button class="btn full" type="button">Создать заявку</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <h2>Почему выбирают нас</h2>
+      <div class="grid">
+        <article class="card feature"><h3>Прозрачные условия</h3><p>Разместите здесь информацию о курсах, комиссиях, минимальной и максимальной сумме операции.</p></article>
+        <article class="card feature"><h3>Поддержка клиентов</h3><p>Опишите часы работы поддержки, каналы связи и среднее время ответа.</p></article>
+        <article class="card feature"><h3>Документы по операциям</h3><p>Добавьте описание подтверждающих документов, порядка их выдачи и хранения.</p></article>
+        <article class="card feature"><h3>Удобный интерфейс</h3><p>Адаптивный лендинг корректно отображается на смартфонах, планшетах и компьютерах.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="audience">
+    <div class="container">
+      <h2>Кому подходит сервис</h2>
+      <div class="grid">
+        <article class="card"><h3>Физическим лицам</h3><p>Для разовых операций с цифровыми активами и обмена между картами.</p></article>
+        <article class="card"><h3>Фрилансерам</h3><p>Для получения дохода в стейблкоинах и его конвертации.</p></article>
+        <article class="card"><h3>Малому бизнесу</h3><p>Для регулярных расчётов и работы с международными контрагентами.</p></article>
+        <article class="card"><h3>Импортёрам</h3><p>Для валютных операций и документального сопровождения сделок.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="steps">
+    <div class="container">
+      <h2>Как проходит обмен</h2>
+      <ol class="steps">
+        <li><span>1</span><h3>Оставьте заявку</h3><p>Выберите актив, направление операции и сумму.</p></li>
+        <li><span>2</span><h3>Подтвердите детали</h3><p>Менеджер уточняет условия и предоставляет реквизиты.</p></li>
+        <li><span>3</span><h3>Проведите операцию</h3><p>Переведите средства согласно согласованным условиям.</p></li>
+        <li><span>4</span><h3>Получите подтверждение</h3><p>После проверки операции клиент получает подтверждение и документы.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="container narrow">
+      <h2>Частые вопросы</h2>
+      <div class="faq">
+        <details><summary>Какие активы поддерживаются?</summary><p>В шаблоне доступны USDT, USDC и BTC. Замените список на актуальный для вашего сервиса.</p></details>
+        <details><summary>Какие установлены лимиты?</summary><p>Укажите минимальную и максимальную сумму, а также условия для крупных операций.</p></details>
+        <details><summary>Сколько занимает операция?</summary><p>Опишите реальный срок обработки заявок и возможные задержки по внешним причинам.</p></details>
+        <details><summary>Как связаться с поддержкой?</summary><p>Добавьте Telegram, WhatsApp, e-mail или телефон в разделе контактов.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacts">
+    <div class="container contact-grid">
+      <div>
+        <h2>Свяжитесь с нами</h2>
+        <p>Оставьте контакты для связи или добавьте форму заявки. Все данные ниже — примеры для замены.</p>
+        <ul class="contact-list">
+          <li>Telegram: <a href="#">@your_username</a></li>
+          <li>E-mail: <a href="mailto:support@example.com">support@example.com</a></li>
+          <li>Телефон: <a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+        </ul>
+      </div>
+      <form class="card form" onsubmit="event.preventDefault(); alert('Форма-заглушка: подключите обработчик или сервис заявок.');">
+        <label>Имя<input type="text" placeholder="Ваше имя" required></label>
+        <label>Контакт<input type="text" placeholder="Telegram, e-mail или телефон" required></label>
+        <label>Сообщение<textarea rows="4" placeholder="Коротко опишите запрос"></textarea></label>
+        <button class="btn full" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Meleuz Top. Шаблон лендинга. Все названия, курсы и контакты — примеры.</p>
+    <p>Цифровые активы связаны с рисками. Проверяйте требования законодательства вашей страны.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
